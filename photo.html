@@ -240,6 +240,15 @@ $(document).ready(function(){
 </script>
 <script>
 $('a.lightbox').colorbox();
+    
+    var box = document.querySelectorAll(".box");
+
+    for (i = 0; i < box.length; i++) {
+       box[i].style.backgroundImage = 'url(http://www.clocktownstudio.com/img/gallery/' + i + '.jpg)';
+    }
+
+    
+    
 </script>
 </body>
 
