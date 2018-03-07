@@ -32,6 +32,16 @@
     <link rel="icon" href="/favicon.ico">
     <link href="https://cdn.rawgit.com/jackmoore/colorbox/master/example1/colorbox.css"  rel="stylesheet" type="text/css">
 
+    <!-- ... [OTHER INCLUDES] ... -->
+		
+		<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+		<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/css/unite-gallery.min.css'></script> 
+		
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/css/unite-gallery.css' type='text/css' /> 
+		<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/themes/default/ug-theme-default.js'></script> 
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/themes/default/ug-theme-default.css' type='text/css' /> 
+    
+    
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -76,6 +86,20 @@
     
 <section id="gallery" class="container content-section text-center">
 
+    
+    <div id="gallery" style="display:none;">
+		
+			<img alt="Image 1 Title" src="http://www.clocktownstudio.com/img/gallery/0.jpg"
+				data-image="http://www.clocktownstudio.com/img/gallery/0.jpg"
+				data-description="Image 1 Description">
+			
+			<img alt="Image 2 Title" src="http://www.clocktownstudio.com/img/gallery/1.jpg"
+				data-image="http://www.clocktownstudio.com/img/gallery/1.jpg"
+				data-description="Image 2 Description">
+		
+		</div>
+    
+    
        <div class="wrapper">
     <a href="http://www.clocktownstudio.com/img/gallery/0.jpg" class="lightbox"><div class="box"></div></a>
   <a href="http://www.clocktownstudio.com/img/gallery/1.jpg" class="lightbox"><div class="box"></div></a>
@@ -243,6 +267,16 @@ $('a.lightbox').colorbox();
     
     
 </script>
+         
+         <script type="text/javascript"> 
+			
+			jQuery(document).ready(function(){ 
+				jQuery("#gallery").unitegallery(); 
+			}); 
+		
+		</script>
+         
+         
 </body>
 
 </html>
