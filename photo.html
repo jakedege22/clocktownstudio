@@ -95,7 +95,7 @@
 
 
        <div class="wrapper">
-
+    <a href="http://www.clocktownstudio.com/img/gallery/0.jpg" class="lightbox"><div class="box"></div></a>
   <a href="http://www.clocktownstudio.com/img/gallery/1.jpg" class="lightbox"><div class="box"></div></a>
   <a href="http://www.clocktownstudio.com/img/gallery/2.jpg" class="lightbox"><div class="box"></div></a>
   <a href="http://www.clocktownstudio.com/img/gallery/3.jpg" class="lightbox"><div class="box"></div></a>
@@ -106,7 +106,7 @@
   <a href="http://www.clocktownstudio.com/img/gallery/8.jpg" class="lightbox"><div class="box"></div></a>
   <a href="http://www.clocktownstudio.com/img/gallery/9.jpg" class="lightbox"><div class="box"></div></a>
   <a href="http://www.clocktownstudio.com/img/gallery/10.jpg" class="lightbox"><div class="box"></div></a>
-  <a href="http://www.clocktownstudio.com/img/gallery/11.jpg" class="lightbox"><div class="box"></div></a>
+ 
 
 
 
@@ -243,7 +243,7 @@ $('a.lightbox').colorbox();
     
     var box = document.querySelectorAll(".box");
 
-    for (i = 1; i < box.length; i++) {
+    for (i = 0; i < box.length; i++) {
        box[i].style.backgroundImage = 'url(http://www.clocktownstudio.com/img/gallery/' + i + '.jpg)';
     }
 
